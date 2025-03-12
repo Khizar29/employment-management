@@ -7,7 +7,13 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
+@Builder
 public class DepartmentDTO {
     private Long id;
     private String name;
+
+    public String getName() {
+        return name;
+    }
+
 }

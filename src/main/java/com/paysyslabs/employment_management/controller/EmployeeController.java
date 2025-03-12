@@ -36,7 +36,7 @@ public class EmployeeController {
     }
 
     @GetMapping(GET_ALL)
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAuthority('ROLE_ADMIN')") // ✅ Use hasAuthority instead of hasRole
     @Operation(summary = "Get all employees", description = "Fetches all employees from the system")
     public ResponseEntity<List<EmployeeDTO>> getAllEmployees() {
         logger.info("Fetching all employees...");
@@ -44,6 +44,7 @@ public class EmployeeController {
         logger.info("Successfully fetched {} employees", employees.size());
         return ResponseEntity.ok(employees);
     }
+
 
     // ✅ Get Employee by ID
     @GetMapping(GET_BY_ID)

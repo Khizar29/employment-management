@@ -11,6 +11,7 @@ import java.util.List;
 @Table(name = "department")
 @Getter
 @Setter
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString

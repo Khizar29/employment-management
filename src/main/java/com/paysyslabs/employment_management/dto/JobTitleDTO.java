@@ -2,8 +2,6 @@ package com.paysyslabs.employment_management.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.*;
-import org.springframework.stereotype.Service;
-
 
 @Getter
 @Setter
