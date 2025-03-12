@@ -31,3 +31,26 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Spring Boot config files
+src/main/resources/application.properties
+src/main/resources/application.yml
+
+# If using environment-specific configs
+src/main/resources/application-*.properties
+src/main/resources/application-*.yml
+
+# Maven & Gradle
+/.mvn/
+/target/
+/build/
+/out/
+/.gradle/
+/.classpath
+.project
+.settings/
+
+/logs/
+/*.log
+nohup.out
+hs_err_pid*
